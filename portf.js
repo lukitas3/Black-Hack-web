@@ -56,7 +56,7 @@ let Index = () => {
 	html.innerHTML = `
 					<nav class="navegador">
         				<div class="logo">
-            				<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+            				<img class="img-logo" src="logoBH.jpeg" alt="">
         				</div>
         				<div class="cont-link">
             				<a class="links" href="#About"><b>Sobre Mi</b></a>
@@ -74,7 +74,7 @@ let Index = () => {
 let About = () => {
 	html.innerHTML = `<nav class="navegador">
 							<div class="logo">
-								<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+								<img class="img-logo" src="logoBH.jpeg" alt="">
 							</div>
 							<div class="cont-link">
 								<a class="links" href="#Proyectos"><b>Works</b></a>
@@ -130,7 +130,7 @@ let About = () => {
 let Contact = () => {
 	html.innerHTML = `<nav class="navegador">
 							<div class="logo">
-								<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+								<img class="img-logo" src="logoBH.jpeg" alt="">
 							</div>
 							<div class="cont-link">
 								<a class="links" href="#Proyectos"><b>Works</b></a>
@@ -173,7 +173,7 @@ let Contact = () => {
 let Proyects = () => {
 	html.innerHTML = `<nav class="navegador">
 							<div class="logo">
-								<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+								<img class="img-logo" src="logoBH.jpeg" alt="">
 							</div>
 							<div class="cont-link">
 								<a class="links" href="#About"><b>Sobre Mi</b></a>
