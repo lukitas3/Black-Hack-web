@@ -56,7 +56,7 @@ let Index = () => {
 	html.innerHTML = `
 					<nav class="navegador">
         				<div class="logo">
-            				<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+            				<img class="img-logo" src="logoBH.jpeg" alt="">
         				</div>
         				<div class="cont-link">
             				<a class="links" href="#About"><b>Sobre Mi</b></a>
@@ -74,7 +74,7 @@ let Index = () => {
 let About = () => {
 	html.innerHTML = `<nav class="navegador">
 							<div class="logo">
-								<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+								<img class="img-logo" src="logoBH.jpeg" alt="">
 							</div>
 							<div class="cont-link">
 								<a class="links" href="#Proyectos"><b>Works</b></a>
@@ -103,7 +103,7 @@ let About = () => {
 								<div class="boxes">
 									<h2><b class="subrayar">Mis Herramientas:</b></h2>
 									<div class="cont-herra">
-										<img class="herramientas" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png">
+										<img class="herramientas" src="https://static.wikia.nocookie.net/logopedia/images/2/2d/Visual_Studio_Code_1.18_icon.svg/revision/latest/scale-to-width-down/250?cb=20210722231931&path-prefix=es">
 										<img class="herramientas" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
 									</div>
 								</div>
@@ -130,7 +130,7 @@ let About = () => {
 let Contact = () => {
 	html.innerHTML = `<nav class="navegador">
 							<div class="logo">
-								<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+								<img class="img-logo" src="logoBH.jpeg" alt="">
 							</div>
 							<div class="cont-link">
 								<a class="links" href="#Proyectos"><b>Works</b></a>
@@ -173,7 +173,7 @@ let Contact = () => {
 let Proyects = () => {
 	html.innerHTML = `<nav class="navegador">
 							<div class="logo">
-								<img class="img-logo" src="../DETODO DISEÑOS/WhatsApp Image 2022-03-03 at 00.06.35.jpeg" alt="">
+								<img class="img-logo" src="logoBH.jpeg" alt="">
 							</div>
 							<div class="cont-link">
 								<a class="links" href="#About"><b>Sobre Mi</b></a>
