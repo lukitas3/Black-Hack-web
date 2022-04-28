@@ -103,7 +103,7 @@ let About = () => {
 								<div class="boxes">
 									<h2><b class="subrayar">Mis Herramientas:</b></h2>
 									<div class="cont-herra">
-										<img class="herramientas" src="https://static.wikia.nocookie.net/logopedia/images/2/2d/Visual_Studio_Code_1.18_icon.svg/revision/latest/scale-to-width-down/250?cb=20210722231931&path-prefix=es">
+										<img class="herramientas" src="Visual_Studio_Code_1.18_icon.png">
 										<img class="herramientas" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
 									</div>
 								</div>
