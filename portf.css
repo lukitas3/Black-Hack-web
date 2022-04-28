@@ -20,6 +20,7 @@ body {
     margin: 0;
     background-color: var(--negro);
     color: var(--lightgrey);
+    overflow-y: hidden;
 }
 
 .portada {
@@ -68,19 +69,21 @@ body {
 
 .links {
     text-decoration: none;
-    color: var(--negro);
+    color: var(--white);
     text-align: center;
     width: max-content;
     font-family: Noto sans;
-    background-color: var(--rojo);
+    background-color: var(--negro);
     border-radius: 2px;
     transition: all .5s;
+    border: 1px solid var(--rojo);
     padding: 10px;
     box-shadow: -8px -8px 0 0 #DA4B4E;
 }
 
 .links:hover {
-    background-color: #DA5B4E;
+    background-color: #1f1f1f;
+    transform: scale(1.05);
 }
 
 .hero-title {
@@ -106,16 +109,18 @@ h1 {
     top: 52%;
     text-decoration: none;
     padding: 10px;
-    color: var(--negro);
-    background-color: var(--rojo);
+    color: var(--white);
+    background-color: var(--negro);
     border-radius: 2px;
     font-family: Noto sans;
     transition: all .5s;
     box-shadow: -8px -8px 0 0 #DA4B4E;
+    border: 2px solid var(--rojo);
 }
 
 .enlace:hover {
-    background-color: #DA5B4E;
+    background-color: #1f1f1f;
+    transform: scale(1.05);
 }
 
 .inicio {
@@ -123,8 +128,9 @@ h1 {
     bottom: 20px;
     right: 20px;
     text-decoration: none;
-    color: #222;
-    background-color: var(--rojo);
+    color: var(--white);
+    background-color: var(--negro);
+    border: 1px solid var(--rojo);
     border-radius: 2px;
     font-family: Noto sans;
     padding: 10px;
@@ -134,7 +140,8 @@ h1 {
 }
 
 .inicio:hover {
-    background-color: #DA5B4E;
+    background-color: #1f1f1f;
+    transform: scale(1.05);
 }
 
 .loading {
@@ -186,7 +193,7 @@ h1 {
 }
 
 .boton:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     background-color: #1e1e1e;
     box-shadow: -8px -8px 0 0 #DA5B4E;
 }
@@ -199,6 +206,7 @@ h1 {
 
 .silueta {
     width: 260px;
+    height: max-content;
     margin: 10px 0 0 50px;
     transition: .5s;
 }
