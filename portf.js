@@ -162,9 +162,9 @@ let Contact = () => {
 							</h2>
 							<h4 class="subtitle">Mediante redes sociales:</h4>
 							<div class="btn-redes">
-								<a class="face redes" href="#"><img class="iconos" src="facebook.png">Facebook</a>
-								<a class="insta redes" href="#"><img class="iconos" src="instagram.png">Instagram</a>
-								<a class="linkedin redes" href="#"><img class="iconos" src="linkedin.png">Linkedin</a>
+								<a class="face redes" href="https://www.facebook.com/WebDesignLucas"><img class="iconos" src="facebook.png">Facebook</a>
+								<a class="insta redes" href="https://www.instagram.com/lucas.web.design/"><img class="iconos" src="instagram.png">Instagram</a>
+								<a class="linkedin redes" href="https://www.linkedin.com/in/lucas-caceres-b37501233/"><img class="iconos" src="linkedin.png">Linkedin</a>
 								<a class="whatsapp redes" href="#"><img class="iconos" src="whatsapp.png">Whatsapp</a>
 							</div>
 							<h4 class="subtitle">O enviame un mail:</h4>
