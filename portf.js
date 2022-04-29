@@ -2,45 +2,60 @@ const html = document.body;
 
 document.addEventListener('DOMContentLoaded', () => {
 	if(location.hash === ''){
+		LoadHTML()
 		Loading()
 		Svganime()
 		Animacion()
 	}
 	if(location.hash === '#About'){
+		LoadHTML()
+		Scroll()
 		About()
-		BoxVis()
-		Avatar()
+		Aparicion('.boxes')
+		Aparicion('.avatar')
 	}
 	if(location.hash === '#Contact'){
+		LoadHTML()
 		Contact()
-		Redes()
-		Form()
+		Aparicion('.redes')
+		Aparicion('.formulario')
+		Scroll()
 	}
 	if(location.hash === '#Proyectos'){
+		LoadHTML()
 		Proyects()
-		Cards()
+		Aparicion('.card-img')
+		Scroll()
 	}
 })
 
 window.addEventListener('hashchange' , () => {
 	if(location.hash === ''){
+		LoadHTML()
 		Index()
+		Scroll()
 	}
 	if(location.hash === '#About'){
+		LoadHTML()
 		About()
-		BoxVis()
-		Avatar()
+		Aparicion('.boxes')
+		Aparicion('.avatar')
+		Scroll()
 	}
 	if(location.hash === '#Contact'){
+		LoadHTML()
 		Contact()
-		Redes()
-		Form()
+		Aparicion('.redes')
+		Aparicion('.formulario')
+		Scroll()
 	}
 	if(location.hash === '#Proyectos'){
+		LoadHTML()
 		Proyects()
-		Cards()
+		Aparicion('.card-img')
+		Scroll()
 	}
-})
+}) 
 
 document.addEventListener('click' , e => {
     if(e.target.matches('.enviar')){
@@ -48,7 +63,9 @@ document.addEventListener('click' , e => {
     }
 	if (e.target.matches('.boton')) {
 		Index()
+		LoadHTML()
 		tipeo()
+		Scroll()
 	}
 })
 
@@ -81,7 +98,7 @@ let About = () => {
 								<a class="links" href="#Contact"><b>Contactame</b></a>
 							</div>
 						</nav>
-						<a class="inicio" href=""><b>Volver al inicio</b></a>
+						<a class="inicio" href="#"><b>Volver al inicio</b></a>
 						<div class="about">
 							<div class="silueta">
 								<img class="avatar" src="https://www.hoyfortnite.com/images/skins/SHADOW%20Enforcer_2.png">
@@ -103,7 +120,7 @@ let About = () => {
 								<div class="boxes">
 									<h2><b class="subrayar">Mis Herramientas:</b></h2>
 									<div class="cont-herra">
-										<img class="herramientas" src="Visual_Studio_Code_1.18_icon.png">
+										<img class="herramientas" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png">
 										<img class="herramientas" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
 									</div>
 								</div>
@@ -137,7 +154,7 @@ let Contact = () => {
 								<a class="links" href="#About"><b>Sobre Mi</b></a>
 							</div>
 						</nav>
-						<a class="inicio" href=""><b>Volver al inicio</b></a>
+						<a class="inicio" href="#"><b>Volver al inicio</b></a>
 						<div class="main">
 							<img class="correo" src="https://cdn.pixabay.com/photo/2017/03/17/06/47/email-2151046_960_720.png">
 							<h2 class="title-contact">
@@ -180,7 +197,7 @@ let Proyects = () => {
 								<a class="links" href="#Contact"><b>Contactame</b></a>
 							</div>
 						</nav>
-						<a class="inicio" href=""><b>Volver al inicio</b></a>
+						<a class="inicio" href="#"><b>Volver al inicio</b></a>
 						<div class="main">
 							<h2 class="title-proyects">
 								<b style="border-bottom:2px solid var(--rojo)">Proyectos webs</b>
@@ -217,13 +234,6 @@ let Proyects = () => {
 						</div>`
 }
 
-let Opacidad = () => {
-	setTimeout(() => {
-		html.style.opacity = '1'
-		html.style.transition = 'all .5s'
-	}, 10);
-}
-
 const tipeo = () => {
 	setTimeout(() => {
 		const typed2 = new Typed('#typed2', {
@@ -234,57 +244,6 @@ const tipeo = () => {
 			loop: true
 		});
 	}, 100);
-}
-
-const BoxVis = () => {
-	const box = document.querySelectorAll('.boxes')
-		setTimeout(() => {
-			box.forEach(e => {
-				e.style.opacity = '1'
-				e.style.transform = 'none'	
-				e.style.transition = '.5s'
-			});
-		}, 600);
-}
-
-const Avatar = () => {
-	const avatar = document.querySelector('.avatar')
-	setTimeout(() => {
-		avatar.style.opacity = '1'
-		avatar.style.transform = 'none'	
-		avatar.style.transition = '.5s'
-	}, 500);
-}
-
-const Cards = () => {
-	const cards = document.querySelectorAll('.card-img')
-		setTimeout(() => {
-			cards.forEach(e => {
-				e.style.opacity = '1'
-				e.style.transform = 'none'	
-				e.style.transition = '.5s'
-			});
-		}, 500);
-}
-
-const Redes = () => {
-	const redes = document.querySelectorAll('.redes')
-		setTimeout(() => {
-			redes.forEach(e => {
-				e.style.opacity = '1'
-				e.style.transform = 'none'	
-				e.style.transition = '.5s'
-			});
-		}, 500);
-}
-
-const Form = () => {
-	const form = document.querySelector('.formulario')
-	setTimeout(() => {
-		form.style.opacity = '1'
-		form.style.transform = 'none'	
-		form.style.transition = '.5s'
-	}, 500);
 }
 
 function FormValidation() {
@@ -336,7 +295,6 @@ function FormValidation() {
 }
 
 const Loading = () => {
-	html.style.opacity = '1'
 	html.innerHTML = `<div class="svg"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	viewBox="0 0 600 300" style="enable-background:new 0 0 600 300;" xml:space="preserve">
 <style type="text/css">
@@ -388,30 +346,32 @@ const Loading = () => {
 <path class="st0" d="M513.94,109.23l-9.77,32.93l6-57.74h-20.3l-14.35,137.53h20.3l5.15-49.13l1.21,49.13h19.53l-3.63-67.83
    l12.93-44.9H513.94z"/>
 </svg>
-<button class="boton" value"Entrar">Ingresar</button></div>
+<button id="boton" class="boton" value"Entrar">Ingresar</button></div>
 					<div class="loading">
-						<span class="loads"></span>
-						<span class="loads"></span>
-						<span class="loads"></span>
-						<span class="loads"></span>
-						<span class="loads"></span>
-						<span class="loads"></span>
-						<span class="loads"></span>
-						<span class="loads"></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
+						<span class="loads" data-random></span>
 					</div>`
 }
 
 const Animacion = () => {
 	anime ({
 		targets: '.loads',
-		translateY: 60,
-		scale: [
-			{value: .1, easing: 'easeOutSine', duration: 500},
-			{value: 1, easing: 'easeInOutQuad', duration: 1200}
-		  ],
-		loop: true,
+		translateX: function() { return anime.random(-360, 360); },
+		translateY: function() { return anime.random(-320, 360); },
+		easing: 'easeInOutElastic',
+		scale: function() { return anime.random(.2, 3); },
+		rotate: function() { return anime.random(-360, 360); },
+		borderRadius: function() { return ['50%', anime.random(5, 40) + '%']; },
+		duration: function() { return anime.random(1200, 1800); },
+		delay: function() { return anime.random(0, 400); },
 		direction: 'alternate',
-		delay: anime.stagger(50)
+  		loop: true
 	})
 }
 
@@ -419,9 +379,52 @@ const Svganime = () => {
 	anime({
 		targets: '.st0',
 		strokeDashoffset: [anime.setDashoffset, 0],
-		easing: 'easeInOutQuad',
-		duration: 3000,
+		easing: 'easeInOutSine',
+		duration: 2000,
 		direction: 'alternate',
-		loop: true
+		loop: true,
+		delay: 0
 	})
 }
+
+const Scroll = () => {
+	html.style.overflowY = 'visible'
+}
+
+const Aparicion = (e) => {
+	anime({
+		targets: e,
+		translateY: {
+			value:	10,
+			easing: 'easeOutInElastic(10, .5)',
+			duration: 1000 
+		},
+		opacity: {
+			value: 1,
+			easing: 'linear',
+			duration: 500
+		},
+		scale: {
+			value: [.5 , 1],
+			easing: 'easeOutInElastic(1, .6)'
+		},
+		delay: anime.stagger(100, {from: 'first'})
+	})
+}
+
+const LoadHTML = () => {
+	anime({
+		targets: html,
+		opacity: {
+			value: [0 , 1],
+			easing: 'easeInOutSine',
+			duration: 1000
+		},
+		width: {
+			value: ['0%', '100%'],
+			easing: 'easeInSine',
+			duration: 500
+		}
+	})
+}
+
